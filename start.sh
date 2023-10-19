@@ -1,20 +1,20 @@
 #!/bin/bash
 
 # Clone llama.cpp
-# git clone https://github.com/ggerganov/llama.cpp.git
-# cd llama.cpp
+#git clone https://github.com/Maolipeng/llama-ggml.git
+#cd llama.cpp
 
 # Build it. `LLAMA_METAL=1` allows the computation to be executed on the GPU
-# LLAMA_METAL=1 make
+#LLAMA_METAL=1 make
 
 # Download model
-export MODEL=llama-2-13b-chat.ggmlv3.q4_0.bin
-if [ ! -f models/${MODEL} ]; then
-    curl -L "https://huggingface.co/TheBloke/Llama-2-13B-chat-GGML/resolve/main/${MODEL}" -o models/${MODEL}
-fi
+#export MODEL=llama-2-13b-chat.ggmlv3.q4_0.bin
+#if [ ! -f models/${MODEL} ]; then
+ #   curl -L "https://huggingface.co/TheBloke/Llama-2-13B-chat-GGML/resolve/main/${MODEL}" -o models/${MODEL}
+#fi
 
 # Set prompt
-PROMPT="Hello! How are you?"
+#PROMPT="Hello! How are you?"
 
 # Run in interactive mode
 ./main -m ./models/llama-2-13b-chat.ggmlv3.q4_0.bin \

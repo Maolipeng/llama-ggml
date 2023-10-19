@@ -1,4 +1,5 @@
 # llama.cpp
+## 此项目是拷贝的llama.cpp项目，因为原项目最新版本已经不支持ggml的模型，
 
 ![llama](https://user-images.githubusercontent.com/1991296/230134379-7181e485-c521-4d23-a0d6-f7b3b61ba524.png)
 
